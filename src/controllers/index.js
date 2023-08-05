@@ -1,5 +1,7 @@
 const users = require('./controller-users');
+const barangs = require("./controller-barang");
 
-module.exports ={
-	users
+module.exports = {
+  users,
+  barangs,
 };
