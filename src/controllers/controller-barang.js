@@ -119,4 +119,25 @@ module.exports = {
       connection.release();
     });
   },
+
+  searchDataBarang(req, res) {
+    let id = req.params.id;
+    pool.getConnection(function (err, connection) {
+      if (err) throw err;
+      connection.query(
+        `SELECT * FROM tb_barang WHERE nama_barang LIKE ?;`,
+        [`%${id}%`],
+
+        function (error, results) {
+          if (error) throw error;
+          res.send({
+            success: true,
+            message: "Berhasil",
+            data: results,
+          });
+        }
+      );
+      connection.release();
+    });
+  },
 };

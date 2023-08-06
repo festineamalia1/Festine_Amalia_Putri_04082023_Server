@@ -12,5 +12,6 @@ router.get("/barangs/:id", barangs.getDataBarangById);
 router.post("/barangs/delete/:id", barangs.deleteDataBarang);
 router.post("/barangs", barangs.addDataBarang);
 router.post("/barangs/edit/:id", barangs.editDataBarang);
+router.get("/search/:id", barangs.searchDataBarang);
 
 module.exports = router;
