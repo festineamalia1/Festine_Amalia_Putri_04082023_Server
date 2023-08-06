@@ -1,4 +1,4 @@
-# Festine Amalia tes 03/08/2023 Server
+# Festine Amalia tes 04/08/2023 Server
 
 
 ## Available Scripts
@@ -18,4 +18,10 @@ list api :
 - POST http://localhost:8080/users
 - POST http://localhost:8080/users/edit/{id}
 - POST http://localhost:8080/users/delete/{id}
-
+  
+- GET http://localhost:8080/barangs
+- GET http://localhost:8080/barangs/{id}
+- POST http://localhost:8080/barangs
+- POST http://localhost:8080/barangs/edit/{id}
+- POST http://localhost:8080/barangs/delete/{id}
+- POST http://localhost:8080/search/{nama barang}
